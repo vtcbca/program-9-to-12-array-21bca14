@@ -1,0 +1,21 @@
+/* write a progarm to Enter any String and print the Lenght of the String or Implement strlen()*/
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+	char s[100];
+	int len,i,vowel=0;
+	clrscr();
+	printf("\n Enter any string:");
+	gets(s);
+	len=strlen(s);
+	for(i=0; s[i]!='\0'; i++)
+	{
+
+		if((s[i]=='a')||(s[i]=='e')||(s[i]=='i')||(s[i]=='o')||(s[i]=='u')||(s[i]=='A')||(s[i]=='E')||(s[i]=='I')||(s[i]=='O')||(s[i]=='U'))
+		vowel++;
+	}
+	printf("\n\n Inputted string %s",s);
+	printf("\n\n Total vovel is %d",vowel);
+	getch();
+}
